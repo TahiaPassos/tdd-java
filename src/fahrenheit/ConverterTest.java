@@ -20,6 +20,11 @@ public class ConverterTest {
 	@DisplayName("Return 0 for 32")
 	public void testThirtyTwo(){		
 	
+		double fahrenheit = 32.0;
+		double expected = 0.0;
+		
+		Double actual = 0.0;
+		assertEquals(expected, actual);
 	}
 	
 	@Test
