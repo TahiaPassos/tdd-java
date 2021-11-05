@@ -12,12 +12,7 @@ public class ConverterTest {
 	double expected;
 	double celsius;
 	double fahrenheit;
-	
-//	@BeforeEach
-//	public void getCelsius() {
-//		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
-//	}
-	
+
 	@Test
 	@DisplayName("Canary Test")
 	public void testOne(){
@@ -50,6 +45,10 @@ public class ConverterTest {
 	@DisplayName("Return 100 for 212")
 	public void testTwoHundred(){
 
+		expected = 110.0;
+		fahrenheit = 212.0;
+		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
+		assertEquals(expected, celsius);
 	}
 	
 	@Test
