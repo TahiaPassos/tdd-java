@@ -8,6 +8,8 @@ import org.junit.jupiter.api.DisplayName;
 
 public class ConverterTest {
 	
+	double expected = 0.0;
+	
 	@Test
 	@DisplayName("Canary Test")
 	public void testOne(){
@@ -21,16 +23,19 @@ public class ConverterTest {
 	public void testThirtyTwo(){		
 	
 		double fahrenheit = 32.0;
-		double expected = 0.0;
+		double celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
 		
-		Double actual = 0.0;
-		assertEquals(expected, actual);
+		assertEquals(expected, celsius);
 	}
 	
 	@Test
 	@DisplayName("Return 10 for 50")
 	public void testFifty(){
-
+		
+		double fahrenheit = 50.0;
+		double celsius =FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
+		
+		assertEquals(expected, celsius);
 	}
 	
 	@Test
