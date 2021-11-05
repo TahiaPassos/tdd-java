@@ -4,11 +4,19 @@ import static org.junit.Assert.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.Test;
+//import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 
 public class ConverterTest {
 	
-	double expected = 0.0;
+	double expected;
+	double celsius;
+	double fahrenheit;
+	
+//	@BeforeEach
+//	public void getCelsius() {
+//		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
+//	}
 	
 	@Test
 	@DisplayName("Canary Test")
@@ -21,10 +29,10 @@ public class ConverterTest {
 	@Test
 	@DisplayName("Return 0 for 32")
 	public void testThirtyTwo(){		
-	
-		double fahrenheit = 32.0;
-		double celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
 		
+		expected = 0.0;
+		fahrenheit = 32.0;
+		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
 		assertEquals(expected, celsius);
 	}
 	
@@ -32,9 +40,9 @@ public class ConverterTest {
 	@DisplayName("Return 10 for 50")
 	public void testFifty(){
 		
-		double fahrenheit = 50.0;
-		double celsius =FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
-		
+		expected = 10.0;
+		fahrenheit = 50.0;
+		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
 		assertEquals(expected, celsius);
 	}
 	
