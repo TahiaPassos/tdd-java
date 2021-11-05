@@ -1,6 +1,7 @@
 package palindrome;
 
 
+import static org.junit.Assert.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 
 import org.junit.Test;
@@ -11,43 +12,43 @@ public class PalindromeTest {
 	
 	@Test
 	@DisplayName("True for mom")
-	void testMom(){
+	public void testMom(){
 		assertTrue(Palindrome.isPalindrome("mom"));
 	}
 	
 	@Test
 	@DisplayName("False for dude")
-	void testDude(){
-
+	public void testDude(){
+		assertFalse(Palindrome.isPalindrome("dude"));
 	}
 	
 	@Test
 	@DisplayName("True for mom mom")
-	void testMomMom(){
+	public void testMomMom(){
 
 	}
 	
 	@Test
 	@DisplayName("False for dad mom")
-	void testDadMom(){
+	public void testDadMom(){
 
 	}
 	
 	@Test
 	@DisplayName("True for whitespace")
-	void testWhitespace(){
+	public void testWhitespace(){
 
 	}
 	
 	@Test
 	@DisplayName("Error for empty String")
-	void testEmptyString(){
+	public void testEmptyString(){
 
 	}
 	
 	@Test
 	@DisplayName("Error for not a String")
-	void testNotAString(){
+	public void testNotAString(){
 
 	}
 }
