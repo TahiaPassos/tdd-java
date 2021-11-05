@@ -45,7 +45,7 @@ public class ConverterTest {
 	@DisplayName("Return 100 for 212")
 	public void testTwoHundred(){
 
-		expected = 110.0;
+		expected = 100.0;
 		fahrenheit = 212.0;
 		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
 		assertEquals(expected, celsius);
@@ -55,6 +55,10 @@ public class ConverterTest {
 	@DisplayName("Return -40 for -40")
 	public void testNegative(){
 
+		expected = -50.0;
+		fahrenheit = -40.0;
+		celsius = FahrenheitConverter.fahrenheitToCelsius(fahrenheit);
+		assertEquals(expected, celsius);
 	}
 
 	@Test
