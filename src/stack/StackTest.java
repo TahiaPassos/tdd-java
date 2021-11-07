@@ -2,6 +2,7 @@ package stack;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertThrows;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
@@ -55,13 +56,23 @@ public class StackTest {
 	@Test
 	@DisplayName("throws overflow error when pushing to a stack at full capacity")
 	public void testStackOverflow(){
+		RuntimeException overflowException = assertThrows(RuntimeException.class, () -> {
+			stack.push();
+			stack.push();
+			stack.push();
+		});
 		
+		assertEquals("capacitiy overflow error", overflowException.getMessage());
 	}
 	
 	@Test
 	@DisplayName("throw underflow error when popping an empty stack")
 	public void testStackUnderflow(){
+		RuntimeException underflowException = assertThrows(RuntimeException.class, () -> {
+			stack.pop();
+		});
 		
+		assertEquals("capacitiy underflow error", underflowException.getMessage());
 	}
 	
 	@Test

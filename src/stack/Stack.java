@@ -6,7 +6,7 @@ public class Stack {
 	int count = 0;
 
 	public boolean isEmpty() {
-		return empty;
+		return count == 0;
 	}
 
 	public Object size() {
@@ -14,12 +14,12 @@ public class Stack {
 	}
 
 	public void push() {
-		empty = false;
+		if(count == 2) throw new RuntimeException("capacitiy overflow error");
 		count += 1;
 	}
 
 	public void pop() {
-		empty = true;
+		if(count == 0) throw new RuntimeException("capacitiy underflow error");
 		count-= 1;
 	}
 }
