@@ -1,15 +1,19 @@
 package stack;
 
 public class Stack {
-
-	protected Stack stack;
+	
+	boolean empty = true;
 
 	public boolean isEmpty() {
-		return true;
+		return empty;
 	}
 
 	public Object size() {
 		return 0;
+	}
+
+	public void push() {
+		
 	}
 }
 
