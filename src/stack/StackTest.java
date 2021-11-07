@@ -1,22 +1,24 @@
 package stack;
 
+import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
 public class StackTest {
-
+	Stack stack = new Stack();
+	
 	@Test
 	@DisplayName("starts empty")
-	public void testEmptyStack(){
-		Stack stack = new Stack();
+	public void testEmptyStack(){	
 		assertTrue(stack.isEmpty());
 	}
 	
 	@Test
 	@DisplayName("starts with stack size of 0")
 	public void testStackSize(){
+		assertEquals(0, stack.size());
 	}
 	
 	@Test

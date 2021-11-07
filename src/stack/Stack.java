@@ -7,4 +7,9 @@ public class Stack {
 	public boolean isEmpty() {
 		return true;
 	}
+
+	public Object size() {
+		return 0;
+	}
 }
+
