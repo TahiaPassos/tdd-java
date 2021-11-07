@@ -47,7 +47,9 @@ public class StackTest {
 	@Test
 	@DisplayName("stack size is 0 when pushed and popped")
 	public void testSizeAfterPushPop(){
-
+		stack.push();
+		stack.pop();
+		assertEquals(0, stack.size());
 	}
 
 	@Test

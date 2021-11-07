@@ -20,6 +20,7 @@ public class Stack {
 
 	public void pop() {
 		empty = true;
+		count-= 1;
 	}
 }
 
