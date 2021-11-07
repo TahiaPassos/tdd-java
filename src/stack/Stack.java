@@ -13,7 +13,7 @@ public class Stack {
 	}
 
 	public void push() {
-		
+		empty = false;
 	}
 }
 
