@@ -10,6 +10,7 @@ public class StackTest {
 	@Test
 	@DisplayName("starts empty")
 	public void testEmptyStack(){
+		Stack stack = new Stack();
 		assertTrue(stack.isEmpty());
 	}
 	
