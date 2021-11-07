@@ -48,7 +48,7 @@ public class PalindromeTest {
 	@Test
 	@DisplayName("Error for not a String")
 	public void testNotAString(){
-		RuntimeException notAStringException = assertThrows(RuntimeException.class, () -> {
+		IllegalArgumentException notAStringException = assertThrows(IllegalArgumentException.class, () -> {
 			Palindrome.isPalindrome(121);
 		});
 		

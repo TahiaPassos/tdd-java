@@ -2,13 +2,14 @@ package palindrome;
 
 public class Palindrome {
 
-	public static Boolean isPalindrome(String phrase) {
-		
-	
-		if(phrase.equals("")) throw new IllegalArgumentException("empty strings are not palindromes");
-		if(phrase.trim().equals("")) return false;
+	public static Boolean isPalindrome(Object phrase) {
 
-		return phrase.toLowerCase().equals(new StringBuffer(phrase).reverse().toString());
+		
+		if(!(phrase instanceof String)) throw new IllegalArgumentException("input must be a string");
+		if(phrase.equals("")) throw new IllegalArgumentException("empty strings are not palindromes");
+		if(((String) phrase).trim().equals("")) return false;
+
+		return ((String) phrase).toLowerCase().equals(new StringBuffer((String) phrase).reverse().toString());
 			
 	}
 
