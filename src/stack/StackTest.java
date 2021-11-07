@@ -32,6 +32,8 @@ public class StackTest {
 	@Test
 	@DisplayName("stack size is 1 when pushed")
 	public void testSizeAfterPush(){
+		stack.push();
+		assertEquals(1, stack.size());
 	}
 	
 	@Test
