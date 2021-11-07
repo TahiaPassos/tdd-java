@@ -26,21 +26,21 @@ public class StackTest {
 	@Test
 	@DisplayName("is not empty when pushed")
 	public void testEmptyAfterPush(){
-		stack.push();
+		stack.push(1);
 		assertFalse(stack.isEmpty());
 	}
 	
 	@Test
 	@DisplayName("stack size is 1 when pushed")
 	public void testSizeAfterPush(){
-		stack.push();
+		stack.push(2);
 		assertEquals(1, stack.size());
 	}
 	
 	@Test
 	@DisplayName("stack is empty when pushed and popped")
 	public void testEmptyAfterPushPop(){
-		stack.push();
+		stack.push('t');
 		stack.pop();
 		assertTrue(stack.isEmpty());
 	}
@@ -48,7 +48,7 @@ public class StackTest {
 	@Test
 	@DisplayName("stack size is 0 when pushed and popped")
 	public void testSizeAfterPushPop(){
-		stack.push();
+		stack.push('f');
 		stack.pop();
 		assertEquals(0, stack.size());
 	}
@@ -57,9 +57,9 @@ public class StackTest {
 	@DisplayName("throws overflow error when pushing to a stack at full capacity")
 	public void testStackOverflow(){
 		RuntimeException overflowException = assertThrows(RuntimeException.class, () -> {
-			stack.push();
-			stack.push();
-			stack.push();
+			stack.push(1);
+			stack.push(2);
+			stack.push(3);
 		});
 		
 		assertEquals("capacitiy overflow error", overflowException.getMessage());
@@ -78,13 +78,17 @@ public class StackTest {
 	@Test
 	@DisplayName("pops the same one item when push")
 	public void testPopReturn(){
-		
+		stack.push('a');
+		assertEquals('a', stack.pop());
 	}
 	
 	@Test
 	@DisplayName("pops two items with the most recent first")
 	public void testLastTwoReturns(){
-		
+		stack.push(1);
+		stack.push(2);
+		assertEquals(2, stack.pop());
+		assertEquals(1, stack.pop());
 	}
 	
 	@Test
