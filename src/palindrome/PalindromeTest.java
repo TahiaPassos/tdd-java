@@ -48,6 +48,10 @@ public class PalindromeTest {
 	@Test
 	@DisplayName("Error for not a String")
 	public void testNotAString(){
-
+		RuntimeException notAStringException = assertThrows(RuntimeException.class, () -> {
+			Palindrome.isPalindrome(121);
+		});
+		
+		assertEquals("input must be a string", notAStringException.getMessage());
 	}
 }
