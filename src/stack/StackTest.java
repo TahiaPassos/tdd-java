@@ -39,7 +39,9 @@ public class StackTest {
 	@Test
 	@DisplayName("stack is empty when pushed and popped")
 	public void testEmptyAfterPushPop(){
-
+		stack.push();
+		stack.pop();
+		assertTrue(stack.isEmpty());
 	}
 	
 	@Test

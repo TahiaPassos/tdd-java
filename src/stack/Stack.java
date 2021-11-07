@@ -17,5 +17,9 @@ public class Stack {
 		empty = false;
 		count += 1;
 	}
+
+	public void pop() {
+		empty = true;
+	}
 }
 
