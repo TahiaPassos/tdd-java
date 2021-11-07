@@ -1,5 +1,7 @@
 package stack;
 
+import static org.junit.Assert.assertTrue;
+
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
@@ -8,6 +10,7 @@ public class StackTest {
 	@Test
 	@DisplayName("starts empty")
 	public void testEmptyStack(){
+		assertTrue(stack.isEmpty());
 	}
 	
 	@Test
