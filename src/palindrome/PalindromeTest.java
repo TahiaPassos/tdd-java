@@ -34,9 +34,9 @@ public class PalindromeTest {
 	}
 	
 	@Test
-	@DisplayName("True for whitespace")
+	@DisplayName("False for whitespace")
 	public void testWhitespace(){
-
+		assertFalse(Palindrome.isPalindrome("   "));
 	}
 	
 	@Test
