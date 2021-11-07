@@ -4,11 +4,12 @@ public class StringTest {
 
 	public static void main(String[] args) {
 		
-		String phrase = "  ";
-		phrase = phrase.toLowerCase();
-		String reversePhrase = new StringBuffer(phrase).reverse().toString();
+		String phrase = "mom dad";
 		
-		System.out.println(phrase.equals(reversePhrase)); 
+		System.out.println(phrase.toLowerCase().equals(new StringBuffer(phrase).reverse().toString())); 
+		
+		System.out.println(phrase);
+		System.out.println(new StringBuffer(phrase).reverse().toString());
 		
 		
 		}
