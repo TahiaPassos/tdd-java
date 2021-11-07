@@ -7,7 +7,6 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
 
-
 public class PalindromeTest {
 	
 	@Test
@@ -25,13 +24,13 @@ public class PalindromeTest {
 	@Test
 	@DisplayName("True for mom mom")
 	public void testMomMom(){
-
+		assertTrue(Palindrome.isPalindrome("mom mom"));
 	}
 	
 	@Test
 	@DisplayName("False for dad mom")
 	public void testDadMom(){
-
+		assertFalse(Palindrome.isPalindrome("dad mom"));
 	}
 	
 	@Test
