@@ -1,10 +1,9 @@
 package palindrome;
 
-
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.Assert.assertThrows;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 import org.junit.jupiter.api.DisplayName;
@@ -54,4 +53,4 @@ public class PalindromeTest {
 		
 		assertEquals("input must be a string", notAStringException.getMessage());
 	}
-}
+}	
