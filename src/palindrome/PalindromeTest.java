@@ -24,12 +24,6 @@ public class PalindromeTest {
 	}
 	
 	@Test
-	@DisplayName("True for mom mom")
-	public void testMomMom(){
-		assertTrue(Palindrome.isPalindrome("mom mom"));
-	}
-	
-	@Test
 	@DisplayName("False for dad mom")
 	public void testDadMom(){
 		assertFalse(Palindrome.isPalindrome("dad mom"));
