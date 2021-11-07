@@ -4,7 +4,11 @@ public class Palindrome {
 
 	public static Boolean isPalindrome(String phrase) {
 		
-	return true;		
+		phrase = phrase.toLowerCase();
+		String reversePhrase = new StringBuffer(phrase).reverse().toString();
+		
+		return phrase.equals(reversePhrase);
+			
 	}
 
 	
