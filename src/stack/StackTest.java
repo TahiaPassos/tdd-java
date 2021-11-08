@@ -94,6 +94,9 @@ public class StackTest {
 	@Test
 	@DisplayName("accepts only a positive capacity")
 	public void testPositiveIntegerCapacity(){
-		
+		RuntimeException invalidCapacity = assertThrows(RuntimeException.class, () -> {
+			new Stack(-2);
+		});
+		assertEquals("invalid capacity", invalidCapacity.getMessage());
 	}
 }

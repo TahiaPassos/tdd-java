@@ -12,6 +12,7 @@ public class Stack {
 		}
 	
 	public Stack(int capacity) {
+		if(capacity < 1) throw new RuntimeException("invalid capacity");
 		this.capacity = capacity;
 		elements = new Object[capacity];
 		}
