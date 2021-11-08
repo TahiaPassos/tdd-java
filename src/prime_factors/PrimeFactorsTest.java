@@ -16,7 +16,7 @@ public class PrimeFactorsTest {
 	@DataProvider(name = "test prime factors")
 	public Object [][] provideNumbers(){
 //	return new Object[][] {{1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}};
-	return new Object[][] {{6}};
+	return new Object[][] {{7}};
 	}
 		
 	
@@ -24,7 +24,7 @@ public class PrimeFactorsTest {
 	public void testPrimeFa(int primeNumbers){		
 		PrimeFactors primeFactors = new PrimeFactors();
 
-		List<Integer> expectedArray = new ArrayList<Integer>(Arrays.asList(2,3));
+		List<Integer> expectedArray = new ArrayList<Integer>(Arrays.asList(7));
 		List<Integer> actualArray = primeFactors.findPrimeFactors(primeNumbers);
 			
 			assertEquals(expectedArray, actualArray);
