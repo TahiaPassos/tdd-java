@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="palindrome.PalindromeTestDataProvider">
+      <class name="prime_factors.PrimeFactorsTest">
         <methods>
-          <include name="testExceptions" invocation-numbers="0 1"/>
+          <include name="testPrimeFa" invocation-numbers="0 1 2 3 4 5 6 7 8"/>
         </methods>
-      </class> <!-- palindrome.PalindromeTestDataProvider -->
+      </class> <!-- prime_factors.PrimeFactorsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
