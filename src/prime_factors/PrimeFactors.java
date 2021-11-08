@@ -1,22 +1,24 @@
 package prime_factors;
 
+import java.util.ArrayList;
+import java.util.List;
+
 public class PrimeFactors {
 	
-	int [] factors = new int[1];
+	List<Integer> factors = new ArrayList<Integer>();
 
-	public  Object findPrimeFactors(int primeNumbers) {
+	public  List<Integer> findPrimeFactors(int primeNumbers) {
 				
 			if(primeNumbers == 1) {
-				return new int[0];
+				return new ArrayList<Integer>();
 			}
 			if(primeNumbers == 2)
-				factors[0] = 2;
+				factors.add(2);
 			
 			if(primeNumbers == 3)
-				factors[0] = 3;
+				factors.add(3);
 			
-			
-			return factors[0];
+			return factors;
 	}
 
 }
