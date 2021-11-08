@@ -16,18 +16,15 @@ public class PrimeFactorsTest {
 	@DataProvider(name = "test prime factors")
 	public Object [][] provideNumbers(){
 //	return new Object[][] {{1}, {2}, {3}, {4}, {5}, {6}, {7}, {8}, {9}};
-	return new Object[][] {{3}};
+	return new Object[][] {{4}};
 	}
 		
 	
 	@Test(dataProvider = "test prime factors")
 	public void testPrimeFa(int primeNumbers){		
 		PrimeFactors primeFactors = new PrimeFactors();
-		
-//		assertEquals(new int[0], primeFactors.findPrimeFactors(primeNumbers));
-//		assertEquals(2, primeFactors.findPrimeFactors(primeNumbers));
-		
-		List<Integer> expectedArray = new ArrayList<Integer>(Arrays.asList(3));
+
+		List<Integer> expectedArray = new ArrayList<Integer>(Arrays.asList(2,2));
 		List<Integer> actualArray = primeFactors.findPrimeFactors(primeNumbers);
 			
 			assertEquals(expectedArray, actualArray);

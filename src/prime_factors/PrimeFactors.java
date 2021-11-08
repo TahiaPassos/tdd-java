@@ -9,14 +9,16 @@ public class PrimeFactors {
 
 	public  List<Integer> findPrimeFactors(int primeNumbers) {
 				
-			if(primeNumbers == 1) {
-				return new ArrayList<Integer>();
+			if(primeNumbers > 1) {
+				if(primeNumbers % 2 == 0) {
+					factors.add(2);
+					primeNumbers /= 2;
+				}
+				
+				if(primeNumbers > 1)
+					factors.add(primeNumbers);
 			}
-			if(primeNumbers == 2)
-				factors.add(2);
 			
-			if(primeNumbers == 3)
-				factors.add(3);
 			
 			return factors;
 	}
