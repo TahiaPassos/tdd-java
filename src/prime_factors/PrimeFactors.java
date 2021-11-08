@@ -14,11 +14,8 @@ public class PrimeFactors {
 					factors.add(2);
 					primeNumbers /= 2;
 				}
-				
-				if(primeNumbers > 1)
-					factors.add(primeNumbers);
+				if(primeNumbers > 1) factors.add(primeNumbers);
 			}
-			
 			
 			return factors;
 	}
