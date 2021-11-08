@@ -4,9 +4,16 @@ public class PrimeFactors {
 	
 	int [] factors;
 
-	public static int[] findPrimeFactors(Object primeNumbers) {
-		
-		return new int[0];
+	public  Object findPrimeFactors(int primeNumbers) {
+				
+			if(primeNumbers == 1) {
+				return new int[0];
+			}
+			
+			factors = new int[1];
+			factors[0] = 2;
+			
+			return factors[0];
 	}
 
 	

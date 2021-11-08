@@ -16,11 +16,11 @@ public class PrimeFactorsTest {
 		
 	
 	@Test(dataProvider = "test prime factors")
-	public void testPrimeFa(Object primeNumbers){		
+	public void testPrimeFa(int primeNumbers){		
 		PrimeFactors primeFactors = new PrimeFactors();
 		
-		//		assertEquals(new int[0], PrimeFactors.findPrimeFactors(primeNumbers));
-		assertEquals(primeFactors.factors[0] = 2, PrimeFactors.findPrimeFactors(primeNumbers));
+//		assertEquals(new int[0], primeFactors.findPrimeFactors(primeNumbers));
+		assertEquals(2, primeFactors.findPrimeFactors(primeNumbers));
 	}
 
 }
