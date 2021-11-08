@@ -14,6 +14,10 @@ public class PrimeFactors {
 					factors.add(2);
 					primeNumbers /= 2;
 				}
+				while(primeNumbers % 3 == 0) {
+					factors.add(3);
+					primeNumbers /= 3;
+				}
 				if(primeNumbers > 1) factors.add(primeNumbers);
 			}
 			
