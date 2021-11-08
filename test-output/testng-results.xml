@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-11-08T12:22:39 BRT" name="Default suite" finished-at="2021-11-08T12:22:39 BRT" duration-ms="51">
+    <groups>
+    </groups>
+    <test started-at="2021-11-08T12:22:39 BRT" name="Default test" finished-at="2021-11-08T12:22:39 BRT" duration-ms="51">
+      <class name="fahrenheit.ConverterTestDataProvider">
+        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="8" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[0.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[32.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleArguments -->
+        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[10.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[50.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleArguments -->
+        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[100.0]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[212.0]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleArguments -->
+        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-40]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-40]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleArguments -->
+        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[-273.15]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[-459.67]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleArguments -->
+      </class> <!-- fahrenheit.ConverterTestDataProvider -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
