@@ -10,7 +10,7 @@ public class PrimeFactors {
 	public  List<Integer> findPrimeFactors(int primeNumbers) {
 				
 			if(primeNumbers > 1) {
-				if(primeNumbers % 2 == 0) {
+				while(primeNumbers % 2 == 0) {
 					factors.add(2);
 					primeNumbers /= 2;
 				}
