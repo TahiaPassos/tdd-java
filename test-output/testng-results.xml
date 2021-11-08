@@ -1,93 +1,157 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-11-08T12:22:39 BRT" name="Default suite" finished-at="2021-11-08T12:22:39 BRT" duration-ms="51">
+  <suite started-at="2021-11-08T13:02:36 BRT" name="Default suite" finished-at="2021-11-08T13:02:36 BRT" duration-ms="75">
     <groups>
     </groups>
-    <test started-at="2021-11-08T12:22:39 BRT" name="Default test" finished-at="2021-11-08T12:22:39 BRT" duration-ms="51">
-      <class name="fahrenheit.ConverterTestDataProvider">
-        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="8" status="PASS">
+    <test started-at="2021-11-08T13:02:36 BRT" name="Default test" finished-at="2021-11-08T13:02:36 BRT" duration-ms="75">
+      <class name="palindrome.PalindromeTestDataProvider">
+        <test-method signature="testExceptions(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testExceptions" data-provider="test exceptions" finished-at="2021-11-08T13:02:36 BRT" duration-ms="6" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[0.0]]>
+                <![CDATA[]]>
               </value>
             </param>
-            <param index="1">
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[empty strings are not palindromes]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: empty strings are not palindromes
+at palindrome.Palindrome.isPalindrome(Palindrome.java:8)
+at palindrome.PalindromeTestDataProvider.testExceptions(PalindromeTestDataProvider.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExceptions -->
+        <test-method signature="testExceptions(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testExceptions" data-provider="test exceptions" finished-at="2021-11-08T13:02:36 BRT" duration-ms="1" status="PASS">
+          <params>
+            <param index="0">
               <value>
-                <![CDATA[32.0]]>
+                <![CDATA[122]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IllegalArgumentException">
+            <message>
+              <![CDATA[input must be a string]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IllegalArgumentException: input must be a string
+at palindrome.Palindrome.isPalindrome(Palindrome.java:7)
+at palindrome.PalindromeTestDataProvider.testExceptions(PalindromeTestDataProvider.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IllegalArgumentException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testExceptions -->
+        <test-method signature="testFalse(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testFalse" data-provider="test false for arguments" finished-at="2021-11-08T13:02:36 BRT" duration-ms="6" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[dude]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleArguments -->
-        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+        </test-method> <!-- testFalse -->
+        <test-method signature="testFalse(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testFalse" data-provider="test false for arguments" finished-at="2021-11-08T13:02:36 BRT" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[10.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[50.0]]>
+                <![CDATA[dad mom]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleArguments -->
-        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+        </test-method> <!-- testFalse -->
+        <test-method signature="testFalse(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testFalse" data-provider="test false for arguments" finished-at="2021-11-08T13:02:36 BRT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[100.0]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[212.0]]>
+                <![CDATA[    ]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleArguments -->
-        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
+        </test-method> <!-- testFalse -->
+        <test-method signature="testTrue(java.lang.Object)[pri:0, instance:palindrome.PalindromeTestDataProvider@59af0466]" started-at="2021-11-08T13:02:36 BRT" name="testTrue" data-provider="test true for arguments" finished-at="2021-11-08T13:02:36 BRT" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[-40]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[-40]]>
+                <![CDATA[mom]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMultipleArguments -->
-        <test-method signature="testMultipleArguments(double,double)[pri:0, instance:fahrenheit.ConverterTestDataProvider@10959ece]" started-at="2021-11-08T12:22:39 BRT" name="testMultipleArguments" data-provider="fahrenheit-arguments" finished-at="2021-11-08T12:22:39 BRT" duration-ms="1" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[-273.15]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[-459.67]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMultipleArguments -->
-      </class> <!-- fahrenheit.ConverterTestDataProvider -->
+        </test-method> <!-- testTrue -->
+      </class> <!-- palindrome.PalindromeTestDataProvider -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

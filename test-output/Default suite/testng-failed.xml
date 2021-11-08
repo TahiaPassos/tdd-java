@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="fahrenheit.ConverterTestDataProvider">
+      <class name="palindrome.PalindromeTestDataProvider">
         <methods>
-          <include name="testThirtyTwo" invocation-numbers="0"/>
+          <include name="testExceptions" invocation-numbers="0 1"/>
         </methods>
-      </class> <!-- fahrenheit.ConverterTestDataProvider -->
+      </class> <!-- palindrome.PalindromeTestDataProvider -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
